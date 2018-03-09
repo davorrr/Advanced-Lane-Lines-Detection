@@ -349,9 +349,6 @@ def detect_lines(img):
         center_text = "{} meters left of center".format(round(dist_from_center,2))
     else:
         center_text = "{} meters right of center".format(round(-dist_from_center,2))
-        
-    # List car's position in relation to middle on the image and radius of curvature
-    
 
     # Invert the transform matrix from birds_eye (to later make the image back to normal below)
     Minv = np.linalg.inv(perspective_M)

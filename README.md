@@ -35,7 +35,7 @@ The goals / steps of this project are the following:
 
 #### 1. Briefly state how you computed the camera matrix and distortion coefficients. Provide an example of a distortion corrected calibration image.
 
-The code for this step is contained in the function _calibrate()_ (lines 19 through 46 in the `advanced_lines_code.py`):
+The code for this step is contained in the function _calibrate()_ (lines 17 through 40 in the `advanced_lines_code.py`):
 ```python
  def calibrate(calibration_images):
     """This function is used to provide camera calibration parameters which
