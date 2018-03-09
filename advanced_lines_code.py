@@ -8,10 +8,8 @@ Created on Sat Jan 20 19:35:25 2018
 import glob
 import numpy as np
 import cv2
-#import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 from moviepy.editor import VideoFileClip
-#import IPython.display as HTML
 
 
 
@@ -316,15 +314,6 @@ def detect_lines(img):
     # Color in left and right line pixels
     out_img[nonzeroy[left_lane_inds], nonzerox[left_lane_inds]] = [255, 0, 0]
     out_img[nonzeroy[right_lane_inds], nonzerox[right_lane_inds]] = [0, 0, 255]
-
-    # Generate a polygon to illustrate the search window area
-    # And recast the x and y points into usable format for cv2.fillPoly()
-    #left_line_window1 = np.array([np.transpose(np.vstack([fit_leftx-margin, fity]))])
-    #left_line_window2 = np.array([np.flipud(np.transpose(np.vstack([fit_leftx+margin, fity])))])
-    #left_line_pts = np.hstack((left_line_window1, left_line_window2))
-    #right_line_window1 = np.array([np.transpose(np.vstack([fit_rightx-margin, fity]))])
-    #right_line_window2 = np.array([np.flipud(np.transpose(np.vstack([fit_rightx+margin, fity])))])
-    #right_line_pts = np.hstack((right_line_window1, right_line_window2))
 
     # Calculate the pixel curve radius
     y_eval = np.max(fity)
