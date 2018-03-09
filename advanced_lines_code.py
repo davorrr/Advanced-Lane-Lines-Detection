@@ -380,17 +380,15 @@ def detect_lines(img):
     
 def process_image(img):
     """ Fuction used in processing the video."""
+   
     return detect_lines(img)
 
-
-# VIDEO PIPELINE
-
-# Processing the video
 
 left_line = Line()
 right_line = Line()
 
 
+# VIDEO PIPELINE
 output_video = 'output_video.mp4'
 clip1 = VideoFileClip("project_video.mp4")
 
